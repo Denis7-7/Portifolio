@@ -1,0 +1,97 @@
+*{
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Arial', Times, serif;
+    background-color: rgb(14, 14, 14);
+    color: white;
+}
+#menu{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+#menu nav a{
+    text-decoration: none;
+    color: rgb(158, 158, 158);
+    margin-right: 15px;
+}
+#menu nav a:hover{
+    color: white;
+}
+#logo{
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+    color: #E50914;
+    margin-left: 20px;
+}
+.house{
+    padding-left: 25px;
+    height: 400px;
+    background-image: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url(assets/capa-house.jpg);
+    color: white;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+    justify-content: flex-end;
+
+}
+.house button{
+    margin-right: 15px;
+    padding: 15px 20px;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    color:white ;
+    font-size: small;
+    border: none;
+    transition: .3s ease all;
+}
+.house button:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+.house h3{
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.descricao{
+    max-width: 45%;
+    margin-top: 10px;
+}
+.house p, .botoes{
+    margin-bottom: 40px;
+}
+label{
+    margin-right: 8px;
+}
+.owl-carousel{
+    margin-top: 5px;
+}
+
+
+@media (max-width: 700px) {
+    header #menu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .house{
+        align-items: center;
+    }
+    .descricao{
+        max-width: 70%;
+    }
+}
+@media (max-width: 450px) {
+    .botoes{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .botoes button{
+        margin-bottom: 10px;
+    }
+}
